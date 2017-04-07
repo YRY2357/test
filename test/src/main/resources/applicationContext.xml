@@ -16,8 +16,8 @@ xsi:schemaLocation="
        <bean id="student" class="com.test.pojos.Student">
         	<constructor-arg index="0" value="xiaoming"> </constructor-arg>
         </bean>
-        <bean id="StudentServiceImpl" class="com.test.service.impl.StudentServiceImpl" autowire="constructor">
-        	<property name="dao" ref="StudentDaoImpl"></property>
+        <bean id="studentServiceImpl" class="com.test.service.impl.StudentServiceImpl" autowire="constructor">
+        	<property name="dao" ref="studentDaoImpl"></property>
         </bean>
-        <bean id="StudentDaoImpl" class="com.test.dao.impl.StudentDaoImpl"></bean>
+        <bean id="studentDaoImpl" class="com.test.dao.impl.StudentDaoImpl"></bean>
 </beans>
