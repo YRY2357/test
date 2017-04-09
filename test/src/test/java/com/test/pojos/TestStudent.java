@@ -1,4 +1,4 @@
-package com.yang.test;
+package com.test.pojos;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -15,13 +15,15 @@ public class TestStudent {
 
 	@Before
 	public void before() {
+		System.out.println(12344);
 		ac = new ClassPathXmlApplicationContext("classpath*:applicationContext.xml");
 		iss=(IStudentService) ac.getBean("studentServiceImpl");
+		
 	}
 	@Test
 	public void testStudent(){
-		BeanStudent bs= new BeanStudent(1,"Ğ¡Ã÷","ÄĞ",18,null);
-		System.out.println(bs);
+		BeanStudent bs= new BeanStudent(1,"å°æ˜","ç”·",18,null);
+		System.out.println(bs.getName());
 	}
 
 }

@@ -8,7 +8,7 @@ import com.test.service.IStudentService;
 
 public class StudentServiceImpl implements IStudentService {
 	private IStudentDao dao;
-
+	
 	public StudentServiceImpl() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -21,6 +21,7 @@ public class StudentServiceImpl implements IStudentService {
 
 	public void saveStudent(BeanStudent stu) throws Exception {
 		// TODO Auto-generated method stub
+		System.out.println(4556489);
 		dao.saveStudent(stu);
 	}
 
